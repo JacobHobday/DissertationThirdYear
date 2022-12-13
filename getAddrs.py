@@ -1,3 +1,4 @@
+#Get a list & the count of every IP found in pcap.
 
 from scapy.all import PcapReader
 
@@ -17,7 +18,7 @@ for pkt in pcap:
     except:
         print(float(pkt.time))
        
-ipList = list(dict.fromkeys(ipList))
+ipList = list(dict.fromkeys(ipList)
 print(pd.Series(ipList).is_unique)
 print("ADDRS: \n")
 print(len(ipList))
