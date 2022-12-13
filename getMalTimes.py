@@ -1,3 +1,5 @@
+#Get the timestamps of malicious pcaps from a filtered pcap file containing only malicious packets.
+
 from scapy.all import PcapReader
 import pandas as pd
 
